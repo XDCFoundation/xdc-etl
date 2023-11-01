@@ -1,19 +1,15 @@
-# Ethereum ETL
+# XDC ETL
 
-[![Build Status](https://app.travis-ci.com/blockchain-etl/ethereum-etl.svg?branch=develop)](https://travis-ci.com/github/blockchain-etl/ethereum-etl)
-[![Join the chat at https://gitter.im/ethereum-eth](https://badges.gitter.im/ethereum-etl.svg)](https://gitter.im/ethereum-etl/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Telegram](https://img.shields.io/badge/telegram-join%20chat-blue.svg)](https://t.me/BlockchainETL)
-[![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/tRKG7zGKtF)
 
-Ethereum ETL lets you convert blockchain data into convenient formats like CSVs and relational databases.
+XDC ETL lets you convert blockchain data into convenient formats like CSVs and relational databases.
 
-*Do you just want to query Ethereum data right away? Use the [public dataset in BigQuery](https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain).*
+*Do you just want to query XDC data right away? Use the [public dataset in BigQuery](https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain).*
 
 [Full documentation available here](http://ethereum-etl.readthedocs.io/).
 
 ## Quickstart
 
-Install Ethereum ETL:
+Install XDC ETL:
 
 ```bash
 pip3 install ethereum-etl
@@ -59,19 +55,6 @@ For the latest version, check out the repo and call
 > python3 ethereumetl.py
 ```
 
-## Useful Links
-
-- [Schema](https://ethereum-etl.readthedocs.io/en/latest/schema/)
-- [Command Reference](https://ethereum-etl.readthedocs.io/en/latest/commands/)
-- [Documentation](https://ethereum-etl.readthedocs.io/)
-- [Public Datasets in BigQuery](https://github.com/blockchain-etl/public-datasets)  
-- [Exporting the Blockchain](https://ethereum-etl.readthedocs.io/en/latest/exporting-the-blockchain/)
-- [Querying in Amazon Athena](https://ethereum-etl.readthedocs.io/en/latest/amazon-athena/)
-- [Querying in Google BigQuery](https://ethereum-etl.readthedocs.io/en/latest/google-bigquery/)
-- [Querying in Kaggle](https://www.kaggle.com/bigquery/ethereum-blockchain)
-- [Airflow DAGs](https://github.com/blockchain-etl/ethereum-etl-airflow)
-- [Postgres ETL](https://github.com/blockchain-etl/ethereum-etl-postgresql)
-- [Ethereum 2.0 ETL](https://github.com/blockchain-etl/ethereum2-etl)
 
 ## Running Tests
 
@@ -121,3 +104,17 @@ docker run --platform linux/x86_64 ethereum-etl:latest stream --start-block 5000
 ## Projects using Ethereum ETL
 * [Google](https://goo.gl/oY5BCQ) - Public BigQuery Ethereum datasets
 * [Nansen](https://nansen.ai/query?ref=ethereumetl) - Analytics platform for Ethereum
+ ## Useful Links on Orginal ETH ETL
+
+- [Schema](https://ethereum-etl.readthedocs.io/en/latest/schema/)
+- [Command Reference](https://ethereum-etl.readthedocs.io/en/latest/commands/)
+- [Documentation](https://ethereum-etl.readthedocs.io/)
+- [Public Datasets in BigQuery](https://github.com/blockchain-etl/public-datasets)  
+- [Exporting the Blockchain](https://ethereum-etl.readthedocs.io/en/latest/exporting-the-blockchain/)
+- [Querying in Amazon Athena](https://ethereum-etl.readthedocs.io/en/latest/amazon-athena/)
+- [Querying in Google BigQuery](https://ethereum-etl.readthedocs.io/en/latest/google-bigquery/)
+- [Querying in Kaggle](https://www.kaggle.com/bigquery/ethereum-blockchain)
+- [Airflow DAGs](https://github.com/blockchain-etl/ethereum-etl-airflow)
+- [Postgres ETL](https://github.com/blockchain-etl/ethereum-etl-postgresql)
+- [Ethereum 2.0 ETL](https://github.com/blockchain-etl/ethereum2-etl)
+
