@@ -21,6 +21,6 @@
 # SOFTWARE.
 
 
-from ethereumetl.cli import cli
+from xdcetl.cli import cli
 
 cli()

@@ -24,11 +24,11 @@ import random
 
 import click
 from blockchainetl.streaming.streaming_utils import configure_signals, configure_logging
-from ethereumetl.enumeration.entity_type import EntityType
+from xdcetl.enumeration.entity_type import EntityType
 
-from ethereumetl.providers.auto import get_provider_from_uri
-from ethereumetl.streaming.item_exporter_creator import create_item_exporters
-from ethereumetl.thread_local_proxy import ThreadLocalProxy
+from xdcetl.providers.auto import get_provider_from_uri
+from xdcetl.streaming.item_exporter_creator import create_item_exporters
+from xdcetl.thread_local_proxy import ThreadLocalProxy
 
 
 @click.command(context_settings=dict(help_option_names=['-h', '--help']))
@@ -60,7 +60,7 @@ def stream(last_synced_block_file, lag, provider_uri, output, start_block, entit
     configure_signals()
     entity_types = parse_entity_types(entity_types)
 
-    from ethereumetl.streaming.eth_streamer_adapter import EthStreamerAdapter
+    from xdcetl.streaming.eth_streamer_adapter import EthStreamerAdapter
     from blockchainetl.streaming.streamer import Streamer
 
     # TODO: Implement fallback mechanism for provider uris instead of picking randomly

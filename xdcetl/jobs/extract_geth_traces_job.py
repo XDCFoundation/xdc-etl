@@ -20,10 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from ethereumetl.executors.batch_work_executor import BatchWorkExecutor
+from xdcetl.executors.batch_work_executor import BatchWorkExecutor
 from blockchainetl.jobs.base_job import BaseJob
-from ethereumetl.mappers.trace_mapper import EthTraceMapper
-from ethereumetl.mappers.geth_trace_mapper import EthGethTraceMapper
+from xdcetl.mappers.trace_mapper import EthTraceMapper
+from xdcetl.mappers.geth_trace_mapper import EthGethTraceMapper
 
 
 class ExtractGethTracesJob(BaseJob):

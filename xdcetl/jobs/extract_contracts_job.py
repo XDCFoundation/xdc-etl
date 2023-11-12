@@ -21,13 +21,13 @@
 # SOFTWARE.
 
 
-from ethereumetl.domain.contract import EthContract
-from ethereumetl.executors.batch_work_executor import BatchWorkExecutor
+from xdcetl.domain.contract import EthContract
+from xdcetl.executors.batch_work_executor import BatchWorkExecutor
 from blockchainetl.jobs.base_job import BaseJob
-from ethereumetl.mappers.contract_mapper import EthContractMapper
+from xdcetl.mappers.contract_mapper import EthContractMapper
 
-from ethereumetl.service.eth_contract_service import EthContractService
-from ethereumetl.utils import to_int_or_none
+from xdcetl.service.eth_contract_service import EthContractService
+from xdcetl.utils import to_int_or_none
 
 
 # Extract contracts

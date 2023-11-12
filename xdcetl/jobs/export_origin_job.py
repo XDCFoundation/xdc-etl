@@ -1,10 +1,10 @@
-from ethereumetl.executors.batch_work_executor import BatchWorkExecutor
+from xdcetl.executors.batch_work_executor import BatchWorkExecutor
 from blockchainetl.jobs.base_job import BaseJob
-from ethereumetl.utils import validate_range
+from xdcetl.utils import validate_range
 
-from ethereumetl.mappers.receipt_log_mapper import EthReceiptLogMapper
-from ethereumetl.mappers.origin_mapper import OriginMarketplaceListingMapper, OriginShopProductMapper
-from ethereumetl.service.origin_extractor import OriginEventExtractor
+from xdcetl.mappers.receipt_log_mapper import EthReceiptLogMapper
+from xdcetl.mappers.origin_mapper import OriginMarketplaceListingMapper, OriginShopProductMapper
+from xdcetl.service.origin_extractor import OriginEventExtractor
 
 
 # Addresses of the marketplace contracts.

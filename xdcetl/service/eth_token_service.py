@@ -23,8 +23,8 @@ import logging
 
 from web3.exceptions import BadFunctionCallOutput, ContractLogicError
 
-from ethereumetl.domain.token import EthToken
-from ethereumetl.erc20_abi import ERC20_ABI, ERC20_ABI_ALTERNATIVE_1
+from xdcetl.domain.token import EthToken
+from xdcetl.erc20_abi import ERC20_ABI, ERC20_ABI_ALTERNATIVE_1
 
 logger = logging.getLogger('eth_token_service')
 

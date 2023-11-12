@@ -2,9 +2,9 @@ import os
 
 from web3 import HTTPProvider
 
-from ethereumetl.providers.rpc import BatchHTTPProvider
-from tests.ethereumetl.job.mock_batch_web3_provider import MockBatchWeb3Provider
-from tests.ethereumetl.job.mock_web3_provider import MockWeb3Provider
+from xdcetl.providers.rpc import BatchHTTPProvider
+from tests.xdcetl.job.mock_batch_web3_provider import MockBatchWeb3Provider
+from tests.xdcetl.job.mock_web3_provider import MockWeb3Provider
 
 
 def get_web3_provider(provider_type, read_resource_lambda=None, batch=False):

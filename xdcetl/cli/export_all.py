@@ -27,12 +27,12 @@ import re
 from datetime import datetime, timedelta
 
 from blockchainetl.logging_utils import logging_basic_config
-from ethereumetl.web3_utils import build_web3
+from xdcetl.web3_utils import build_web3
 
-from ethereumetl.jobs.export_all_common import export_all_common
-from ethereumetl.providers.auto import get_provider_from_uri
-from ethereumetl.service.eth_service import EthService
-from ethereumetl.utils import check_classic_provider_uri
+from xdcetl.jobs.export_all_common import export_all_common
+from xdcetl.providers.auto import get_provider_from_uri
+from xdcetl.service.eth_service import EthService
+from xdcetl.utils import check_classic_provider_uri
 
 logging_basic_config()
 

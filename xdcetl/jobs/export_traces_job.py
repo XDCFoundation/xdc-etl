@@ -21,15 +21,15 @@
 # SOFTWARE.
 import logging
 
-from ethereumetl.executors.batch_work_executor import BatchWorkExecutor
+from xdcetl.executors.batch_work_executor import BatchWorkExecutor
 from blockchainetl.jobs.base_job import BaseJob
-from ethereumetl.mainnet_daofork_state_changes import DAOFORK_BLOCK_NUMBER
-from ethereumetl.mappers.trace_mapper import EthTraceMapper
-from ethereumetl.service.eth_special_trace_service import EthSpecialTraceService
+from xdcetl.mainnet_daofork_state_changes import DAOFORK_BLOCK_NUMBER
+from xdcetl.mappers.trace_mapper import EthTraceMapper
+from xdcetl.service.eth_special_trace_service import EthSpecialTraceService
 
-from ethereumetl.service.trace_id_calculator import calculate_trace_ids
-from ethereumetl.service.trace_status_calculator import calculate_trace_statuses
-from ethereumetl.utils import validate_range
+from xdcetl.service.trace_id_calculator import calculate_trace_ids
+from xdcetl.service.trace_status_calculator import calculate_trace_statuses
+from xdcetl.utils import validate_range
 
 
 class ExportTracesJob(BaseJob):

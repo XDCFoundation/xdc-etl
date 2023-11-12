@@ -21,7 +21,7 @@
 # SOFTWARE.
 
 
-from ethereumetl.utils import pairwise
+from xdcetl.utils import pairwise
 
 
 class GraphOperations(object):

@@ -23,7 +23,7 @@
 
 import json
 
-from tests.ethereumetl.job.mock_web3_provider import MockWeb3Provider, build_file_name
+from tests.xdcetl.job.mock_web3_provider import MockWeb3Provider, build_file_name
 
 
 class MockBatchWeb3Provider(MockWeb3Provider):

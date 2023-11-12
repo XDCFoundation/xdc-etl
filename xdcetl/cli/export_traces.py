@@ -23,13 +23,13 @@
 
 import click
 
-from ethereumetl.web3_utils import build_web3
+from xdcetl.web3_utils import build_web3
 
-from ethereumetl.jobs.export_traces_job import ExportTracesJob
+from xdcetl.jobs.export_traces_job import ExportTracesJob
 from blockchainetl.logging_utils import logging_basic_config
-from ethereumetl.providers.auto import get_provider_from_uri
-from ethereumetl.thread_local_proxy import ThreadLocalProxy
-from ethereumetl.jobs.exporters.traces_item_exporter import traces_item_exporter
+from xdcetl.providers.auto import get_provider_from_uri
+from xdcetl.thread_local_proxy import ThreadLocalProxy
+from xdcetl.jobs.exporters.traces_item_exporter import traces_item_exporter
 
 logging_basic_config()
 

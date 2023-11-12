@@ -21,9 +21,9 @@
 # SOFTWARE.
 
 
-from ethereumetl.domain.trace import EthTrace
-from ethereumetl.mainnet_daofork_state_changes import DAOFORK_BLOCK_NUMBER
-from ethereumetl.utils import hex_to_dec, to_normalized_address
+from xdcetl.domain.trace import EthTrace
+from xdcetl.mainnet_daofork_state_changes import DAOFORK_BLOCK_NUMBER
+from xdcetl.utils import hex_to_dec, to_normalized_address
 
 
 class EthTraceMapper(object):

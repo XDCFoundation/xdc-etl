@@ -24,13 +24,13 @@
 import click
 
 from datetime import datetime
-from ethereumetl.web3_utils import build_web3
+from xdcetl.web3_utils import build_web3
 
 from blockchainetl.file_utils import smart_open
 from blockchainetl.logging_utils import logging_basic_config
-from ethereumetl.service.eth_service import EthService
-from ethereumetl.providers.auto import get_provider_from_uri
-from ethereumetl.utils import check_classic_provider_uri
+from xdcetl.service.eth_service import EthService
+from xdcetl.providers.auto import get_provider_from_uri
+from xdcetl.utils import check_classic_provider_uri
 
 logging_basic_config()
 

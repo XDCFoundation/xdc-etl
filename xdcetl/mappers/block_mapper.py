@@ -21,9 +21,9 @@
 # SOFTWARE.
 
 
-from ethereumetl.domain.block import EthBlock
-from ethereumetl.mappers.transaction_mapper import EthTransactionMapper
-from ethereumetl.utils import hex_to_dec, to_normalized_address
+from xdcetl.domain.block import EthBlock
+from xdcetl.mappers.transaction_mapper import EthTransactionMapper
+from xdcetl.utils import hex_to_dec, to_normalized_address
 
 
 class EthBlockMapper(object):

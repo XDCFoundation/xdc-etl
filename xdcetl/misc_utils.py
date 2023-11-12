@@ -26,7 +26,7 @@ import json
 
 import six
 
-from ethereumetl.csv_utils import set_max_field_size_limit
+from xdcetl.csv_utils import set_max_field_size_limit
 from blockchainetl.file_utils import get_file_handle, smart_open
 
 

@@ -10,14 +10,14 @@ def read(fname):
 long_description = read('README.md') if os.path.isfile("README.md") else ""
 
 setup(
-    name='ethereum-etl',
-    version='2.3.1',
-    author='Evgeny Medvedev',
-    author_email='evge.medvedev@gmail.com',
-    description='Tools for exporting Ethereum blockchain data to CSV or JSON',
+    name='xdcetl',
+    version='1.0.1',
+    author='Quincy',
+    author_email='quincy@xdc.org',
+    description='Tools for exporting XDC blockchain data to CSV or JSON',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/blockchain-etl/ethereum-etl',
+    url='https://github.com/XDCFoundation/xdc-etl',
     packages=find_packages(exclude=['schemas', 'tests']),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -28,7 +28,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9'
     ],
-    keywords='ethereum',
+    keywords='xdc',
     python_requires='>=3.7.2,<4',
     install_requires=[
         'web3>=5.29,<6',
@@ -65,13 +65,11 @@ setup(
         ]
     },
     entry_points={
-        'console_scripts': [
-            'ethereumetl=ethereumetl.cli:cli',
-        ],
+        'console_scripts': ['xdcetl=xdcetl.cli:cli'],
     },
     project_urls={
-        'Bug Reports': 'https://github.com/blockchain-etl/ethereum-etl/issues',
-        'Chat': 'https://gitter.im/ethereum-etl/Lobby',
-        'Source': 'https://github.com/blockchain-etl/ethereum-etl',
+        'Bug Reports': 'https://github.com/blockchain-etl/xdc-etl/issues',
+        'Chat': 'https://gitter.im/xdc-etl/Lobby',
+        'Source': 'https://github.com/blockchain-etl/xdc-etl',
     },
 )

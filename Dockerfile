@@ -1,6 +1,6 @@
 FROM python:3.7
 MAINTAINER Evgeny Medvedev <evge.medvedev@gmail.com>
-ENV PROJECT_DIR=ethereum-etl
+ENV PROJECT_DIR=xdc-etl
 
 RUN mkdir /$PROJECT_DIR
 WORKDIR /$PROJECT_DIR
@@ -12,4 +12,4 @@ ENV TINI_VERSION v0.18.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 
-ENTRYPOINT ["/tini", "--", "python", "ethereumetl"]
+ENTRYPOINT ["/tini", "--", "python", "xdcetl"]

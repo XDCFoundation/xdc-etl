@@ -20,12 +20,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from ethereumetl.executors.batch_work_executor import BatchWorkExecutor
+from xdcetl.executors.batch_work_executor import BatchWorkExecutor
 from blockchainetl.jobs.base_job import BaseJob
-from ethereumetl.mappers.token_transfer_mapper import EthTokenTransferMapper
-from ethereumetl.mappers.receipt_log_mapper import EthReceiptLogMapper
-from ethereumetl.service.token_transfer_extractor import EthTokenTransferExtractor, TRANSFER_EVENT_TOPIC
-from ethereumetl.utils import validate_range
+from xdcetl.mappers.token_transfer_mapper import EthTokenTransferMapper
+from xdcetl.mappers.receipt_log_mapper import EthReceiptLogMapper
+from xdcetl.service.token_transfer_extractor import EthTokenTransferExtractor, TRANSFER_EVENT_TOPIC
+from xdcetl.utils import validate_range
 
 
 class ExportTokenTransfersJob(BaseJob):

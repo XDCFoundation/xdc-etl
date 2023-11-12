@@ -25,9 +25,9 @@ import pytest
 from dateutil.parser import parse
 from web3 import HTTPProvider, Web3
 
-from ethereumetl.service.eth_service import EthService
-from ethereumetl.service.graph_operations import OutOfBoundsError
-from ethereumetl.web3_utils import build_web3
+from xdcetl.service.eth_service import EthService
+from xdcetl.service.graph_operations import OutOfBoundsError
+from xdcetl.web3_utils import build_web3
 from tests.helpers import skip_if_slow_tests_disabled
 
 

@@ -1,6 +1,6 @@
 ## Exporting the Blockchain
 
-If you'd like to have blockchain data set up and hosted for you, [get in touch with us at D5](https://d5.ai/?ref=ethereumetl).
+If you'd like to have blockchain data set up and hosted for you, [get in touch with us at D5](https://d5.ai/?ref=xdcetl).
 
 1. Install python 3.5.3+: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
@@ -15,19 +15,19 @@ Make sure it downloaded the blocks that you need by executing `eth.syncing` in t
 You can export blocks below `currentBlock`,
 there is no need to wait until the full sync as the state is not needed (unless you also need contracts bytecode
 and token details; for those you need to wait until the full sync). Note that you may need to wait for another day or 
-   two for the node to download the states. See this issue [https://github.com/blockchain-etl/ethereum-etl/issues/265#issuecomment-970451522](https://github.com/blockchain-etl/ethereum-etl/issues/265#issuecomment-970451522). 
+   two for the node to download the states. See this issue [https://github.com/blockchain-etl/xdc-etl/issues/265#issuecomment-970451522](https://github.com/blockchain-etl/xdc-etl/issues/265#issuecomment-970451522). 
 Make sure to set `--txlookuplimit 0` if you use geth.
  
-1. Install Ethereum ETL: `> pip3 install ethereum-etl`
+1. Install Ethereum ETL: `> pip3 install xdc-etl`
 
 1. Export all:
 
 ```bash
-> ethereumetl export_all --help
-> ethereumetl export_all -s 0 -e 5999999 -b 100000 -p file://$HOME/Library/Ethereum/geth.ipc -o output
+> xdcetl export_all --help
+> xdcetl export_all -s 0 -e 5999999 -b 100000 -p file://$HOME/Library/Ethereum/geth.ipc -o output
 ```
     
-In case `ethereumetl` command is not available in PATH, use `python3 -m ethereumetl` instead.
+In case `xdcetl` command is not available in PATH, use `python3 -m xdcetl` instead.
 
 The result will be in the `output` subdirectory, partitioned in Hive style:
 ```bash
@@ -45,7 +45,7 @@ If you use Parity you should disable warp mode with `--no-warp` option because w
 does not place all of the block or receipt data into the database [https://wiki.parity.io/Getting-Synced](https://wiki.parity.io/Getting-Synced)
 
 If you see weird behavior, e.g. wrong number of rows in the CSV files or corrupted files,
-check out this issue: https://github.com/medvedev1088/ethereum-etl/issues/28
+check out this issue: https://github.com/medvedev1088/xdc-etl/issues/28
 
 ### Export in 2 Hours
 

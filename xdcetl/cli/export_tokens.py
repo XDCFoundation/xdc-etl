@@ -23,15 +23,15 @@
 
 import click
 
-from ethereumetl.web3_utils import build_web3
+from xdcetl.web3_utils import build_web3
 
 from blockchainetl.file_utils import smart_open
-from ethereumetl.jobs.export_tokens_job import ExportTokensJob
-from ethereumetl.jobs.exporters.tokens_item_exporter import tokens_item_exporter
+from xdcetl.jobs.export_tokens_job import ExportTokensJob
+from xdcetl.jobs.exporters.tokens_item_exporter import tokens_item_exporter
 from blockchainetl.logging_utils import logging_basic_config
-from ethereumetl.thread_local_proxy import ThreadLocalProxy
-from ethereumetl.providers.auto import get_provider_from_uri
-from ethereumetl.utils import check_classic_provider_uri
+from xdcetl.thread_local_proxy import ThreadLocalProxy
+from xdcetl.providers.auto import get_provider_from_uri
+from xdcetl.utils import check_classic_provider_uri
 
 logging_basic_config()
 

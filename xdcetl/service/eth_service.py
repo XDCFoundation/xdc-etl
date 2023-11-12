@@ -23,7 +23,7 @@
 
 from datetime import datetime, timezone
 
-from ethereumetl.service.graph_operations import GraphOperations, OutOfBoundsError, Point
+from xdcetl.service.graph_operations import GraphOperations, OutOfBoundsError, Point
 
 
 class EthService(object):

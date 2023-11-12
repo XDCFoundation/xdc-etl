@@ -23,10 +23,10 @@
 import pytest
 
 import tests.resources
-from ethereumetl.jobs.export_blocks_job import ExportBlocksJob
-from ethereumetl.jobs.exporters.blocks_and_transactions_item_exporter import blocks_and_transactions_item_exporter
-from ethereumetl.thread_local_proxy import ThreadLocalProxy
-from tests.ethereumetl.job.helpers import get_web3_provider
+from xdcetl.jobs.export_blocks_job import ExportBlocksJob
+from xdcetl.jobs.exporters.blocks_and_transactions_item_exporter import blocks_and_transactions_item_exporter
+from xdcetl.thread_local_proxy import ThreadLocalProxy
+from tests.xdcetl.job.helpers import get_web3_provider
 from tests.helpers import compare_lines_ignore_order, read_file, skip_if_slow_tests_disabled
 
 RESOURCE_GROUP = 'test_export_blocks_job'

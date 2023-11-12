@@ -23,14 +23,14 @@
 
 import click
 
-from ethereumetl.web3_utils import build_web3
+from xdcetl.web3_utils import build_web3
 
-from ethereumetl.csv_utils import set_max_field_size_limit
-from ethereumetl.jobs.export_token_transfers_job import ExportTokenTransfersJob
-from ethereumetl.jobs.exporters.token_transfers_item_exporter import token_transfers_item_exporter
+from xdcetl.csv_utils import set_max_field_size_limit
+from xdcetl.jobs.export_token_transfers_job import ExportTokenTransfersJob
+from xdcetl.jobs.exporters.token_transfers_item_exporter import token_transfers_item_exporter
 from blockchainetl.logging_utils import logging_basic_config
-from ethereumetl.providers.auto import get_provider_from_uri
-from ethereumetl.thread_local_proxy import ThreadLocalProxy
+from xdcetl.providers.auto import get_provider_from_uri
+from xdcetl.thread_local_proxy import ThreadLocalProxy
 
 logging_basic_config()
 

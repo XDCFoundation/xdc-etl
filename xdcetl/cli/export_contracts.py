@@ -24,12 +24,12 @@
 import click
 
 from blockchainetl.file_utils import smart_open
-from ethereumetl.jobs.export_contracts_job import ExportContractsJob
-from ethereumetl.jobs.exporters.contracts_item_exporter import contracts_item_exporter
+from xdcetl.jobs.export_contracts_job import ExportContractsJob
+from xdcetl.jobs.exporters.contracts_item_exporter import contracts_item_exporter
 from blockchainetl.logging_utils import logging_basic_config
-from ethereumetl.thread_local_proxy import ThreadLocalProxy
-from ethereumetl.providers.auto import get_provider_from_uri
-from ethereumetl.utils import check_classic_provider_uri
+from xdcetl.thread_local_proxy import ThreadLocalProxy
+from xdcetl.providers.auto import get_provider_from_uri
+from xdcetl.utils import check_classic_provider_uri
 
 logging_basic_config()
 

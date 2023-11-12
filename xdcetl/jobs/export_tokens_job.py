@@ -21,10 +21,10 @@
 # SOFTWARE.
 
 
-from ethereumetl.executors.batch_work_executor import BatchWorkExecutor
+from xdcetl.executors.batch_work_executor import BatchWorkExecutor
 from blockchainetl.jobs.base_job import BaseJob
-from ethereumetl.mappers.token_mapper import EthTokenMapper
-from ethereumetl.service.eth_token_service import EthTokenService
+from xdcetl.mappers.token_mapper import EthTokenMapper
+from xdcetl.service.eth_token_service import EthTokenService
 
 
 class ExportTokensJob(BaseJob):

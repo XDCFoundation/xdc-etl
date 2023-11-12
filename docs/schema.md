@@ -153,7 +153,7 @@ trace_id                     | string      |
 - `gas_used` is 0 on traces with error in geth, empty in parity;
 - zero output of subcalls is `0x000...` in geth, `0x` in parity;
 
-You can find column descriptions in [https://github.com/medvedev1088/ethereum-etl-airflow](https://github.com/medvedev1088/ethereum-etl-airflow/tree/master/dags/resources/stages/raw/schemas)
+You can find column descriptions in [https://github.com/medvedev1088/xdc-etl-airflow](https://github.com/medvedev1088/xdc-etl-airflow/tree/master/dags/resources/stages/raw/schemas)
 
 Note: for the `address` type all hex characters are lower-cased.
 `boolean` type can have 2 values: `True` or `False`.

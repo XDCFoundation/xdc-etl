@@ -23,14 +23,14 @@
 import os
 
 import pytest
-from ethereumetl.streaming.eth_streamer_adapter import EthStreamerAdapter
-from ethereumetl.thread_local_proxy import ThreadLocalProxy
+from xdcetl.streaming.eth_streamer_adapter import EthStreamerAdapter
+from xdcetl.thread_local_proxy import ThreadLocalProxy
 
 import tests.resources
-from ethereumetl.enumeration.entity_type import EntityType
+from xdcetl.enumeration.entity_type import EntityType
 from blockchainetl.jobs.exporters.composite_item_exporter import CompositeItemExporter
 from blockchainetl.streaming.streamer import Streamer
-from tests.ethereumetl.job.helpers import get_web3_provider
+from tests.xdcetl.job.helpers import get_web3_provider
 from tests.helpers import compare_lines_ignore_order, read_file, skip_if_slow_tests_disabled
 
 RESOURCE_GROUP = 'test_stream'
