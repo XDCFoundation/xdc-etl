@@ -11,7 +11,7 @@ long_description = read('README.md') if os.path.isfile("README.md") else ""
 
 setup(
     name='xdcetl',
-    version='1.0.1',
+    version='1.0.2',
     author='Quincy',
     author_email='quincy@xdc.org',
     description='Tools for exporting XDC blockchain data to CSV or JSON',
@@ -34,7 +34,6 @@ setup(
         'web3>=5.29,<6',
         'eth-utils==1.10',
         'eth-abi>=2.2.0,<3.0.0',
-        # TODO: This has to be removed when "ModuleNotFoundError: No module named 'eth_utils.toolz'" is fixed at eth-abi
         'python-dateutil>=2.8.0,<3',
         'click>=8.0.4,<9',
         'ethereum-dasm==0.1.4',
