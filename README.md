@@ -12,7 +12,7 @@ XDC ETL lets you convert blockchain data into convenient formats like CSVs and r
 Install XDC ETL:
 
 ```bash
-pip3 install xdc-etl
+pip3 install xdcetl
 ```
 
 Export blocks and transactions ([Schema](docs/schema.md#blockscsv), [Reference](docs/commands.md#export_blocks_and_transactions)):
@@ -42,7 +42,7 @@ Export traces ([Schema](docs/schema.md#tracescsv), [Reference](docs/commands.md#
 Stream blocks, transactions, logs, token_transfers continually to console ([Reference](docs/commands.md#stream)):
 
 ```bash
-> pip3 install xdc-etl[streaming]
+> pip3 install xdcetl[streaming]
 > xdcetl stream --start-block 500000 -e block,transaction,log,token_transfer --log-file log.txt \
 --provider-uri Https://rpc.XDC.org
 ```
